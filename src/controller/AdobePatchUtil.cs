@@ -21,6 +21,7 @@ namespace FreeAdobe.src
             if (patchInfos == null)
             {
                 patchInfos = new List<PatchInfo>();
+                initPatchInfo("2022");
                 initPatchInfo("2021");
                 initPatchInfo("2020");
                 initPatchInfo("2019");
@@ -32,6 +33,7 @@ namespace FreeAdobe.src
         public static List<PatchInfo> loadProductPatchInfo(AdobeProduct productName,string version) {
             if (patchInfos == null) {
                 patchInfos = new List<PatchInfo>();
+                initPatchInfo("2022");
                 initPatchInfo("2021");
                 initPatchInfo("2020");
                 initPatchInfo("2019");
